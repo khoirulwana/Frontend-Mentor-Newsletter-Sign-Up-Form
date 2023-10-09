@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="main-container" class="main-container">
+      <div id="left" class="left">
+        <div class="offers">
+          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
+          <h1>Stay Updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+        </div>
+        <div id="form" class="form">
+          <div class="form-input">
+            <label for="input">
+              <p>Email Addres</p>
+              <p id="error-message">Valid email required</p>
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@company.com"
+            />
+          </div>
+          <div class="form-button">
+            <button id="submit-button" type="submit">
+              Subscribe to monthly newsletter
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="right" class="right">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
+      </div>
+    </div>
+    <div id="subscribed-message" class="subscribed-message">
+      <img src="./assets/images/icon-success.svg" alt="" />
+      <h2>Thanks for subscribing</h2>
+      <p>
+        A confirmation email has sent to <span id="user-email"></span>. Please
+        open it and click the button inside to confirm your subscription
+      </p>
+      <button id="dismiss-button" class="dismiss-button">
+        Dismiss message
+      </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
